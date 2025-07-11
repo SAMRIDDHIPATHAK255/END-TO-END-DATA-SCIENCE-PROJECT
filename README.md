@@ -1,5 +1,17 @@
 # END-TO-END-DATA-SCIENCE-PROJECT
 
+*COMPANY*: CODTECH IT SOLUTIONS
+
+*NAME*: SAMRIDDHI PATHAK
+
+*INTERN ID*: CT08DL700
+
+*DOMAIN*: DATA SCIENCE
+
+*DURATION*: 8 WEEKS
+
+*MENTOR*: NEELA SANTOSH
+
 This end-to-end data science project focuses on building and deploying a machine learning model to predict passenger survival on the Titanic. The project begins with data collection, where we use a cleaned Titanic dataset containing information such as age, fare, sex, and embarkation port of passengers. This data is read into a pandas DataFrame for exploration and analysis. The goal is to predict whether a passenger survived the disaster, using these features. The dataset is split into features (independent variables) and the target variable, "survived," which indicates the survival status of each passenger. The features include both numerical and categorical variables, requiring preprocessing to prepare the data for machine learning.
 
 To preprocess the data, we build a pipeline that uses a `ColumnTransformer`. Numerical features such as age and fare are standardized using `StandardScaler`, while categorical features like sex and embarkation point are converted into numerical format using one-hot encoding. This preprocessing step ensures that the model can interpret all input features correctly and uniformly. A `RandomForestClassifier` is used as the predictive model due to its ability to handle both numerical and categorical features efficiently, its robustness against overfitting, and its high performance on classification tasks. The model is trained using a train-test split approach, where 80% of the data is used for training and 20% is used to evaluate the model's performance. After training, the model achieves a good accuracy score on the test set, demonstrating its ability to generalize well on unseen data.
